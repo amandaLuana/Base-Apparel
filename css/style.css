@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: #F0F0F0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 800px;
+    background: url('../images/bg-pattern-desktop.svg');
+    background-color: white;
+    background-size: contain;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#flex {
+    margin: 100px 0 0 150px;
+}
+
+#flex h1 {
+    max-width: 365px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-size: 70px;
+    margin-top: 120px;
+}
+
+#flex h1 span {
+    color: #CE9797;
+    font-weight: 300;
+}
+
+#flex p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #CE9797;
+    max-width: 440px;
+    margin-top: 25px;
+}
+
+form {
+    border: 1px solid #CE9797;
+    display: inline-block;
+    padding: 5px 0 0 20px;
+    margin-top: 50px;
+    border-radius: 32px;
+    width: 450px;
+    height: 55px;
+    position: relative;
+}
+
+form > input[type="text"] {
+    top: 0;
+    border: none;
+    color: #CE9797;
+    width: 320px;
+    height: 40px;
+}
+
+/* mudando a cor do placeholder */
+
+::-webkit-input-placeholder {
+    color: #CE9797;
+ }
+  
+ :-moz-placeholder { /* Firefox 18- */
+    color: #CE9797;  
+ }
+  
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #CE9797;  
+ }
+  
+ :-ms-input-placeholder {  
+    color: #CE9797;  
+ }
+
+form > button {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    background: linear-gradient(135deg, #CE9797, #F96262);
+    opacity: 0.7;
+    border: none;
+    border-radius: 32px;
+    width: 100px;
+    height: 55px;
+}
+
+footer {
+    margin-top: 5px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
