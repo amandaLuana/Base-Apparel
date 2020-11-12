@@ -65,12 +65,12 @@ form:hover {
 
 form > input[type="email"] {
     top: 0;
+    font-size: 16px;
     border: none;
-    color: #CE9797;
+    color: black;
     width: 320px;
     height: 40px;
 }
-
 
 /* mudando a cor do placeholder */
 
@@ -106,6 +106,20 @@ form > button:hover {
     height: 70px;
     opacity: 1;
     top: -5px;
+    transition: 0.2s;
+}
+
+form p {
+    margin-top: 20px;
+    color: #CE9797;
+    font-weight: 400;
+}
+
+form img#icon-error{
+    position: absolute;
+    top: 15px;
+    right: 120px;
+    display: none;
 }
 
 footer {
@@ -113,10 +127,10 @@ footer {
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 12px; 
     text-align: center; 
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
