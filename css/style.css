@@ -68,6 +68,7 @@ form > input[type="email"] {
     font-size: 16px;
     border: none;
     color: #413A3A;
+    background: transparent;
     width: 320px;
     height: 40px;
     outline: none;
