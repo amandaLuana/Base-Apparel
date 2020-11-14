@@ -7,32 +7,32 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body {
-    background: #F0F0F0;
-}
-
 #container {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
-    height: 800px;
+    width: 100vw;
+    height: 100%;
     background: url('../images/bg-pattern-desktop.svg');
-    background-color: white;
     background-size: contain;
-    margin: auto;
-    margin-top: 20px;
 }
 
 #flex {
     margin: 100px 0 0 150px;
 }
 
+#hero-mobile {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
 #flex h1 {
-    max-width: 365px;
+    width: 365px;
     font-weight: 600;
     letter-spacing: 10px;
     font-size: 70px;
-    margin-top: 120px;
+    margin-top: 100px;
+    color: #413A3A;
 }
 
 #flex h1 span {
@@ -40,19 +40,19 @@ body {
     font-weight: 300;
 }
 
-#flex p {
+#flex .description {
     font-size: 16px;
     font-weight: 400;
     color: #CE9797;
     max-width: 440px;
     margin-top: 25px;
+    line-height: 30px;
 }
 
 form {
     border: 1px solid #CE9797;
-    display: inline-block;
     padding: 5px 0 0 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 32px;
     width: 450px;
     height: 55px;
@@ -67,9 +67,10 @@ form > input[type="email"] {
     top: 0;
     font-size: 16px;
     border: none;
-    color: black;
+    color: #413A3A;
     width: 320px;
     height: 40px;
+    outline: none;
 }
 
 /* mudando a cor do placeholder */
@@ -109,7 +110,7 @@ form > button:hover {
     transition: 0.2s;
 }
 
-form p {
+form .msg-error {
     margin-top: 20px;
     color: #CE9797;
     font-weight: 400;
@@ -122,8 +123,14 @@ form img#icon-error{
     display: none;
 }
 
+#hero-desktop {
+    max-width: 100%;
+    height: auto;
+}
+
+
 footer {
-    margin-top: 5px;
+    margin-top: 35px;
 }
 
 .attribution { 
@@ -134,3 +141,97 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%);
 }
+
+/* Responsivo */
+
+@media only screen and (max-width: 1215px) {
+    #flex {
+        margin: 100px 0 0 80px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #flex {
+        margin: 100px 0 0 40px;
+    }
+}
+
+@media only screen and (max-width: 1110px)  {
+    #hero-desktop {
+        display: none;
+    }
+
+    #hero-mobile {
+        display: block;
+        margin: auto;
+        width: 375px;
+    }
+
+
+    #flex img.logo {
+        padding: 40px 0;
+    }
+
+    #flex {
+        margin: auto;
+    }
+
+    #flex h1, #flex span, #flex .description {
+        margin: 50px auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px)  {
+    form {
+        width: 350px;
+        margin: auto;
+    }
+    
+    form > input[type="email"] {
+        width: 170px;
+        margin: auto;
+    }
+
+    .msg-error {
+        margin-top: 10px;
+    }
+
+    #flex .description {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #flex img.logo {
+        margin-left: 30px;
+    }
+
+    #flex h1, #flex span{
+        font-size: 45px;
+    }
+
+    #flex .description {
+        max-width: 310px;
+        text-align: center;
+    }
+
+    form {
+        width: 310px;
+        margin: auto;
+    }
+
+    form > input[type="email"] {
+        width: 140px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

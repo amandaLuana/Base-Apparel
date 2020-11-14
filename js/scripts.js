@@ -1,6 +1,9 @@
-document.querySelector('form input').oninvalid = function() {
+var text = document.querySelector('form input');
+
+document.querySelector('form input').oninvalid = function (evt) {
     // remove mensagem de erro padrão
-    this.setCustomValidity("");
+    onchange = "try{setCustomValidity('')}catch(e){}"
+    evt.preventDefault();
 
     // faz a validação novamente
     if (!this.validity.valid) {
@@ -10,5 +13,9 @@ document.querySelector('form input').oninvalid = function() {
         
         var display = document.querySelector('form img#icon-error');
         display.style.display = 'block';
-    }
+
+        
+    } 
 }
+
+
