@@ -63,7 +63,7 @@ form:hover {
     border: 2px solid #F96262;
 }
 
-form > input[type="email"] {
+form > label input[type="email"] {
     top: 0;
     font-size: 16px;
     border: none;
@@ -189,7 +189,7 @@ footer {
         margin: auto;
     }
     
-    form > input[type="email"] {
+    form > label input[type="email"] {
         width: 170px;
         margin: auto;
     }
@@ -222,7 +222,7 @@ footer {
         margin: auto;
     }
 
-    form > input[type="email"] {
+    form > label input[type="email"] {
         width: 140px;
     }
 }
